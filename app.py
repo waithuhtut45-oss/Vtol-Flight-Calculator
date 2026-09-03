@@ -6,8 +6,10 @@ hide_streamlit_style = """
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
+    [data-testid="collapsedControl"] {visibility: visible !important;}
     </style>
 """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 st.set_page_config(page_title="Complete VTOL Flight Calculator", page_icon="🛩️")
 st.title("🛩️ VTOL Drone Flight Distance & Duration Calculator")
